@@ -7,7 +7,7 @@
 }
 ::selection{
   color: #fff;
-  background: #007bff;
+  background: #2d445d;
 }
 body{
   padding: 10px;
@@ -19,6 +19,20 @@ body{
 .wrapper{
   max-width: 1100px;
 }
+
+.header h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1:hover{
+  color: #314a65;
+  border-bottom: 1px solid #007bff;
+  
+}
+
 .gallery{
   display: flex;
   flex-wrap: wrap;
@@ -26,11 +40,13 @@ body{
 .gallery .image{
   padding: 7px;
   width: calc(100% / 3);
+
 }
 .gallery .image span{
   display: flex;
   width: 100%;
   overflow: hidden;
+  border-radius: 18px;
 }
 .gallery .image img{
   width: 100%;
@@ -39,6 +55,7 @@ body{
 }
 .gallery .image:hover img{
   transform: scale(1.1);
+ filter: contrast(2);
 }
 .preview-box{
   position: fixed;
